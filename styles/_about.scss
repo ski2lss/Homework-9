@@ -1,0 +1,35 @@
+@use 'variables' as vars;
+@use 'mixins' as mixin;
+
+.section__2 {
+	background-color: vars.$color-surface;
+	@include mixin.col-cen;
+	padding: 105px 0;
+	gap: 50px;
+
+@include mixin.mobile {
+	padding: 60px 20px;
+	gap: 30px;
+	}
+}
+
+.section2 { 
+	&__main {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	color: vars.$color-text;
+	}
+
+	&__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 164%;
+	letter-spacing: 0%;
+	text-align: center;
+	color: vars.$color-muted;
+	max-width: 540px;
+	}
+}
